@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Times</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <link rel="manifest" href="manifest.json" />
+
+  <body class="bg-green-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-96 text-center">
+      <h1 class="text-2xl font-bold text-green-700 mb-4">
+        Real-Time Prayer Times
+      </h1>
+      <p id="location-status" class="text-gray-500">Fetching location...</p>
+      <div id="prayer-times" class="mt-4 space-y-2"></div>
+      <button
+        id="notify-btn"
+        class="mt-4 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg"
+      >
+        Enable Notifications
+      </button>
+      <audio
+        id="adhan-audio"
+        src="https://server8.mp3quran.net/saad/001.mp3"
+      ></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
